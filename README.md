@@ -1,27 +1,15 @@
-# NLP Feedback Intelligence
+# NLP Feedback Intelligence — Week 2
 
-## Week 1: NLP Project Planning and Proposal
+This folder contains the Week 2 methodology for data collection, preprocessing, and feature engineering.
 
-This repository contains the planning documents for an internship project that explores NLP techniques for analyzing written customer feedback.
+- Select a documented public or anonymized customer-feedback dataset.
+- Check licence, provenance, schema, language, labels, missing values, duplicates, and class balance.
+- Preserve raw text and create a documented cleaned-text field.
+- Apply justified normalization, tokenization, and optional stop-word removal or lemmatization.
+- Build a TF-IDF baseline with word unigrams and bigrams.
+- Consider Word2Vec, GloVe, or BERT embeddings as optional comparisons.
+- Split data before fitting vectorizers to avoid data leakage.
 
-### Problem
-Large volumes of unstructured feedback are difficult to review manually and consistently.
+Tools: Python, pandas, NumPy, NLTK or spaCy, scikit-learn, Matplotlib/Seaborn, Jupyter/Colab, and GitHub.
 
-### Proposed workflow
-1. Select an appropriate public or anonymized feedback dataset.
-2. Inspect data quality and perform exploratory analysis.
-3. Clean and normalize text.
-4. Build a TF-IDF + Logistic Regression or Naive Bayes baseline.
-5. Evaluate with accuracy, precision, recall, F1-score, and a confusion matrix.
-6. Summarize sentiment and frequent terms/themes with visualizations.
-
-### Proposed tools
-Python, pandas, NumPy, scikit-learn, NLTK or spaCy, Matplotlib, Jupyter Notebook, and GitHub. Hugging Face Transformers/BERT is an optional extension if resources permit.
-
-### Project schedule
-Six weeks: proposal; dataset and EDA; preprocessing; modelling; evaluation and insights; final report.
-
-### Responsible use
-Use public or anonymized data, avoid publishing personal information, document dataset limitations, and treat predictions as decision support requiring human review.
-
-See `Week_1_Project_Proposal.md` for the detailed proposal.
+Note: This is a methodology plan, not a claim that data collection or model training has already been completed. Record dataset source, licence, and implementation results when practical work is performed.

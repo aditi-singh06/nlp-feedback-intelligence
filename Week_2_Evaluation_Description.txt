@@ -1,0 +1,11 @@
+Word count: 318
+
+During Week 2 of my Data Analytics Specialist – Language Processing internship, I prepared a detailed methodology for the data collection, text preprocessing, and feature engineering stages of my project, “NLP Feedback Intelligence.” The objective of this task was to explain how raw customer feedback can be converted into structured and meaningful information that can later be used for NLP analysis and sentiment classification.
+
+I outlined a data collection strategy based on publicly available customer or product review datasets from documented sources such as Kaggle or the Hugging Face Datasets Hub. The plan includes checking dataset licences, source documentation, language, available fields, label definitions, and data quality before selecting a dataset. I identified useful fields such as review text, record ID, rating or sentiment label, product category, and date, while emphasizing that personal identifiers should not be collected or published.
+
+I described a systematic preprocessing pipeline covering missing-value checks, duplicate detection, text normalization, HTML and URL handling, tokenization, stop-word removal, and stemming or lemmatization. I also explained why sentiment-bearing words such as “not” and “never” must be retained, and why punctuation, emojis, and numbers should not be removed without considering their meaning. The methodology includes inspecting language variation and preserving original text for traceability.
+
+For feature engineering, I compared Bag of Words, TF-IDF, word n-grams, word embeddings such as Word2Vec and GloVe, and contextual embeddings from transformer models such as BERT. I selected TF-IDF with unigrams and bigrams as the proposed baseline because it is efficient, interpretable, and suitable for traditional machine-learning classifiers. I included pseudocode to illustrate dataset loading, cleaning, train-test splitting, vectorization, and evaluation.
+
+Finally, I identified important risks such as privacy issues, class imbalance, noisy labels, over-cleaning, duplicate leakage, and data leakage, together with mitigation strategies. This task improved my understanding of how data quality and feature representation influence the reliability of an NLP system and prepared a structured foundation for the next modelling stage.
