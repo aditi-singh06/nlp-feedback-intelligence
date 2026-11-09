@@ -1,15 +1,19 @@
-# NLP Feedback Intelligence — Week 2
+# Week 3 — NLP Feedback Intelligence
 
-This folder contains the Week 2 methodology for data collection, preprocessing, and feature engineering.
+## Files
+- `week3_text_classification.py` — reproducible sentiment-classification demo.
+- `Week_3_Evaluation_Description.txt` — evaluator description.
+- `Week_3_Text_Classification_Report_Aditi_Singh.docx` — report (submit separately on the internship portal).
 
-- Select a documented public or anonymized customer-feedback dataset.
-- Check licence, provenance, schema, language, labels, missing values, duplicates, and class balance.
-- Preserve raw text and create a documented cleaned-text field.
-- Apply justified normalization, tokenization, and optional stop-word removal or lemmatization.
-- Build a TF-IDF baseline with word unigrams and bigrams.
-- Consider Word2Vec, GloVe, or BERT embeddings as optional comparisons.
-- Split data before fitting vectorizers to avoid data leakage.
+## Run
+Install Python dependencies:
+```bash
+pip install pandas scikit-learn
+```
+Run:
+```bash
+python week3_text_classification.py
+```
 
-Tools: Python, pandas, NumPy, NLTK or spaCy, scikit-learn, Matplotlib/Seaborn, Jupyter/Colab, and GitHub.
-
-Note: This is a methodology plan, not a claim that data collection or model training has already been completed. Record dataset source, licence, and implementation results when practical work is performed.
+## Important note
+The script uses a tiny synthetic dataset to demonstrate the workflow without a download. Its metrics are illustrative only and must not be presented as a real-world benchmark. For a full experiment, replace the sample records with a suitably licensed public review dataset and document its source.
